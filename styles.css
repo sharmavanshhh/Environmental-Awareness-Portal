@@ -1,0 +1,335 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap";
+
+:root {
+  --color: rgb(63 63 63);
+}
+
+html {
+  scroll-padding-top: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  padding-top: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.9rem;
+}
+
+.parallax-container {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: justify;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  background-image: url("bg1.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: #fff;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.buffer {
+  width: 100%;
+  min-height: 11vh;
+  color: #111;
+  background-color: #5a5a5a;
+  border-bottom: 3px solid #f2f2f2;
+  border-top: 3px solid #f2f2f2;
+  flex-direction: column;
+  text-align: center;
+}
+
+.parallax-container2 {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  background-image: url("bg2.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: #fff;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container3 {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  background-image: url("bg3.jpeg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: #fff;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container4 {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  background-image: url("bg4.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: #fff;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.parallax-container5 {
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*  this is where the magic happens:  */
+  background-attachment: fixed;
+  background-image: url("bg5.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: #fff;
+  row-gap: 4rem;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  min-height: 5vh;
+  color: #f2f2f2;
+  background-color: #222222;
+  border-bottom: 3px solid #222222;
+  border-top: 3px solid #f2f2f2;
+  background-color: #222222;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+.home {
+  text-align: center;
+  color: #f1f1f1;
+  font-family: Trebuchet MS;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.home2 {
+  padding-top: 20px;
+  padding-left: 160px;
+  padding-right: 160px;
+  color: white;
+  font-family: Trebuchet MS;
+  font-size: 20.97px;
+  text-align: justify;
+}
+
+.btn {
+  background-color: #019D81;
+  border: none;
+  font-size: 1.2rem;
+  color: #f2f2f2;
+  font-weight: 900;
+  font-family: Trebuchet MS;
+  height: 50px;
+  width: 150px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #016F5B;
+  cursor: pointer;
+  color: #fff;
+  transform: scale(1.08);
+  border-radius: 10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  transform: scale(1.15);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidebar .closebtn:hover {
+  transform: scale(1.15);
+}
+
+.openbtn {
+  font-size: 33px;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  color: #5a5a5a;
+  height: 100px;
+  width: 45px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  border: none;
+  top: 1;
+  left: 0;
+  float: left;
+  position: fixed;
+  transition: 0.3s;
+
+}
+
+.openbtn:hover {
+  background-color: #111;
+  transform: scale(1.15);
+  color: #fff;
+}
+
+#content {
+  transition: margin-left 0.5s;
+  padding: 0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.sidebar footer {
+  color: #818181;
+  bottom: 0;
+}
+
+.topic_btn {
+  background-color: #FEAD62;
+  border: none;
+  color: #131313;
+  height: 60px;
+  width: 220px;
+  margin: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: Trebuchet MS;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.topic_btn:hover {
+  background-color: #CC604E;
+  cursor: pointer;
+  color: #fff;
+  transform: scale(1.08);
+  border-radius: 0px;
+  border-radius: 15px;
+}
+
+.parallax-container4 a {
+  color: #f1f1f1;
+}
+
+.card {
+  display: flex;
+  width: 280px;
+  height: 350px;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
+  margin-top: 40px;
+  margin-right: 70px;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3em;
+  background-position: center;
+  background-size: cover;
+}
+
+.card:nth-of-type(1) .card-img {
+  background-image: url('Biodiv_card.jpeg');
+}
+
+.card:nth-of-type(3) .card-img {
+  background-image: url('pollu_card.avif');
+}
+
+.card:nth-of-type(2) .card-img {
+  background-image: url('eco_card.avif');
+}
+
+.card button {
+  display: inline-block;
+  padding: 1em 3.5em;
+  cursor: pointer;
+  border-radius: 0.3em;
+  background-color: #222222;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.parallax-container5 section {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

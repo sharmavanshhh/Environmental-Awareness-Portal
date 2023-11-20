@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Awareness Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="hide()">×</a>
+            <a href="#index">HOME</a>
+            <a href="#about">BLOG</a>
+            <a href="#topics">TOPICS</a>
+            <a href="#tips">TIPS</a>
+            <a href="#quizzes">QUIZZES</a>
+        </div>
+        <!-- ☰ -->
+        <header id="index" class="parallax-container">
+            <button class="openbtn" id="openbtn" onclick="show()">➤</button>
+            <h1>Environmental Awareness Portal</h1>
+        </header>
+        <div id="about" class="buffer">
+            <br>
+            <q class="home">
+                Explore, Learn, Act - Together for a Greener Tomorrow</q>
+        </div>
+        <div class="parallax-container parallax-container2">
+            <p class="home2">Environmental awareness is the growing recognition of the critical
+                need to protect and preserve our planet's fragile ecosystems.
+                It is a collective consciousness that has been steadily rising as
+                we confront the escalating challenges of climate change, pollution,
+                deforestation, and the loss of biodiversity. This awareness transcends
+                borders and cultures, uniting people worldwide in their commitment to safeguarding
+                the environment for future generations. It prompts individuals, communities,
+                governments, and businesses to take responsible actions, adopt sustainable practices,
+                and seek innovative solutions to mitigate the adverse impacts of human activities on
+                the Earth. As we become increasingly aware of the interconnectedness of all life on
+                this planet, environmental awareness serves as a powerful catalyst for positive change,
+                driving us to work together to address the pressing environmental issues faced by our
+                world</p>
+
+            <form action="https://en.wikipedia.org/wiki/Environmentalism" target="_blank">
+                <button type="submit" class="btn">Know More</button>
+            </form>
+
+        </div>
+        <div id="topics" class="buffer">
+            <br>
+            <q class="home">
+                There is sufficiency in the world for man's need but not for man's greed</q>
+        </div>
+        <div class="parallax-container parallax-container3">
+            <h1>Explore Environmental Topics</h1>
+            <section>
+                <a href="climate_change.html" target="_blank">
+                    <button class="topic_btn">Climate Change</button></a>
+                <a href="biodiversity.html" target="_blank">
+                    <button class="topic_btn">Biodiversity</button></a>
+                <a href="renewable_energy.html" target="_blank">
+                    <button class="topic_btn">Renewable Energy</button></a>
+                <a href="pollution.html" target="_blank">
+                    <button class="topic_btn">Pollution</button></a>
+            </section>
+            <section>
+                <a href="eco_tourism.html" target="_blank">
+                    <button class="topic_btn">Eco Tourism</button></a>
+                <a href="wildlife_conservation.html" target="_blank">
+                    <button class="topic_btn">Wildlife Conservation</button></a>
+                <a href="disasters.html" target="_blank">
+                    <button class="topic_btn">Natural Disasters</button></a>
+                <a href="environmental_edu.html" target="_blank">
+                    <button class="topic_btn">Environmental Education</button></a>
+            </section>
+        </div>
+        <div id="tips" class="buffer">
+            <br>
+            <q class="home">
+                Nature provides a free lunch, but only if we control our appetites</q>
+        </div>
+        <div class="parallax-container parallax-container4">
+            <h1>Live Sustainability</h1>
+            <section class="home2">
+                Reducing your carbon footprint and living a more sustainable
+                lifestyle is not only good for the environment but can also
+                save you money and improve your overall well-being.
+                Here are some practical tips and actionable
+                steps you can reduce your carbon footprint,
+                conserve resources, and live more sustainably:
+                <div style="width: 330px; float:left; margin: auto;">
+                    <ul>
+                        <li><a href="#">Reduce Energy Consumption</a></li>
+                        <li><a href="#">Cut Down on Water Usage</a></li>
+                        <li><a href="#">Reduce, Reuse, Recycle</a></li>
+                        <li><a href="#">Conscious Transportation</a></li>
+                        <li><a href="#">Reduce Meat Consumption</a></li>
+                    </ul>
+                </div>
+                <div style="float:right; width:330px; margin: auto;">
+                    <ul>
+                        <li><a href="#">Conserve Resources</a></li>
+                        <li><a href="#">Energy-Efficient Appliances</a></li>
+                        <li><a href="#">Green Landscaping</a></li>
+                        <li><a href="#">Reduce Air Travel</a></li>
+                        <li><a href="#">Education and Advocacy</a></li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+        <div class="buffer">
+            <br>
+            <q class="home">
+                We never know the worth of water till the well is dry.</q>
+        </div>
+        <div id="quizzes" class="parallax-container parallax-container5">
+            <h1>Test Your Knowledge</h1>
+            <section>
+                <div class="card" style="color:#222222; float: right;">
+                    <div class="card-img"></div>
+                    <h3>
+                        <center>Biodiversity</center>
+                    </h3>
+                    <form action="biodiv_quiz.html" target="_blank">
+                        <button type="submit">Take Quiz</button>
+                    </form>
+                </div>
+                <div class="card" style="color:#222222; float: right;">
+                    <div class="card-img"></div>
+                    <h3>
+                        <center>Ecosystem</center>
+                    </h3>
+                    <form action="eco_quiz.html" target="_blank">
+                        <button type="submit">Take Quiz</button>
+                    </form>
+                </div>
+                <div class="card" style="color:#222222; float: right;">
+                    <div class="card-img"></div>
+                    <h3>
+                        <center>Pollution</center>
+                    </h3>
+                    <form action="pollu_quiz.html" target="_blank">
+                        <button type="submit">Take Quiz</button>
+                    </form>
+                </div>
+        </div>
+        </section>
+    </div>
+    <div class="footer">
+        <p style="text-align: right;">Designed By VANSH SHARMA (Reg. No. 12302330)</p>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
